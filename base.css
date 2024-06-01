@@ -1,0 +1,248 @@
+/* 1 */
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+/*font-family: 'Paytone One', sans-serif; */
+
+/* 2 */
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+/* font-family: 'Viga', sans-serif; */
+
+/* 3 */
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@300&display=swap');
+/* font-family: 'Mukta Malar', sans-serif; */
+
+/* 4 */
+@import url('https://fonts.googleapis.com/css2?family=Farsan&display=swap');
+/* font-family: 'Farsan', cursive; */
+
+/* 5 */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+/* font-family: 'Source Sans Pro', sans-serif; */
+
+/* 6 */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+/* font-family: 'Oswald', sans-serif; */
+
+/* 7 */
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+/* font-family: 'Kanit', sans-serif; */
+
+:root{
+    --pur:#a50000;
+    --ver:#008a09;
+    --agua:#006eff; 
+    --nara:#ff4400;
+    --dora:rgb(255, 200, 0);
+
+    --f1:'Paytone One', sans-serif;
+    --f2:'Viga', sans-serif; 
+    --f3:'Mukta Malar', sans-serif;
+    --f4:'Farsan', cursive;
+    --f5:'Source Sans Pro', sans-serif;
+    --f6:'Oswald', sans-serif;
+    --f7:'Kanit', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+header{
+    background-color: #ca1517;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: grid;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 80px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+.logo{
+    margin-left: 50px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.logo img{
+    width:200px;
+}
+.menu{
+    margin-right: 50px;
+    display: flex;
+    justify-content: flex-end;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+nav a{
+    margin-left: 20px;
+    font-size: 16x;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    transition-property: transform background-color;
+    transition-duration: 800ms;
+}
+nav a:hover{
+    transform: scale(1.1);
+    background-color: #fcc107;
+    color: #ca1517;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px black;
+}
+.register{
+    border-radius: 50px;
+    background-color: #fcc107;
+    color: #ca1517;
+}
+footer{
+    background-color: #ca1517;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    position: static;
+    bottom: 0;
+}
+.logo1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: #fcc107;
+    width: 280px;
+    height: 140px;
+    border-radius: 20px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.logo1 img{
+    width:280px;
+}
+.caja1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 110px 110px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.linea{
+    margin: auto;
+    width: 8px;
+    height: 200px;
+    background-color: #fcc107;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.sede{
+    margin-top: 20px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.sede h1{
+    color: #fcc107;
+}
+.horario {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.horario h1{
+    color: #fcc107;
+}
+.caja2{
+    margin: auto;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.contacto h1{
+    color: #fcc107;
+    text-align: center;
+}
+.caja3{
+    margin-right: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.call{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.call img{
+    width: 55px;
+}
+.caja3 p{
+    font-size: 21px;
+    margin: auto;
+}
+.redes{
+    margin: auto;
+    width: 150px;
+    height: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+footer a{
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    display: flex;
+    padding: 10px;
+    background-color: rgb( 243, 194, 50);
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+    transition: background-color 1s, color 1s;
+}
+footer a:hover {
+   background-color: rgb(168, 5, 5);
+}
+.instagram img{
+    height: 20px;
+    margin: auto;
+}
+.tiktok img{
+    height: 26px;
+    position: relative;
+    bottom: 3px;
+    right: 3px;
+}
+.facebook img{
+    height: 30px;
+    position: relative;
+    bottom: 0.2px;
+    left: 3px;
+}

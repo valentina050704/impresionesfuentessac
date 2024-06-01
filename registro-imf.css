@@ -1,0 +1,104 @@
+body{
+    font-family: var(--f7);
+}
+.fondo1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.fondoa{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+.fondoa img{
+    max-width: 200%;
+}
+.registroc{
+    margin: auto;
+    width: 450px;
+    margin: 0% 25%;
+    border-radius: 15px;
+    background-color: #c00;
+    color:white;
+    text-align: center;
+    overflow: hidden;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+.residencia{
+    width: 10px;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+.form-container {
+padding: 20px;
+background-color: #c00;
+color: #fff;
+flex: 1;
+min-width: 300px;
+}
+
+.form-container h2 {
+margin: auto;
+margin-bottom: 20px;
+}
+
+.form-container form {
+margin: auto;
+display: flex;
+flex-direction: column;
+}
+
+.form-container form input,
+.form-container form textarea,
+.form-container form button {
+margin-bottom: 15px;
+padding: 10px;
+font-size: 16px;
+}
+
+
+.form-container form input,
+.form-container form textarea {
+border: none;
+border-radius: 5px;
+}
+
+
+textarea{
+width: 100%;
+}
+
+
+
+.form-container form button {
+width: 30%;
+margin: auto;
+background-color: #fff;
+color: #c00;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-weight: bold;
+}
+
+.form-container form button:hover {
+background-color: rgb(255, 218, 55);
+}
+
+
+.form-container form label {
+margin-bottom: 10px;
+font-size: 16px;
+}
